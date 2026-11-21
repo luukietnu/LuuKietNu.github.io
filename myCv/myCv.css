@@ -1,8 +1,5 @@
-
-* {
-    box-sizing: border-box;
+* { box-sizing: border-box;
 }
-
 body {
     margin: 0;
     padding: 16px;
@@ -12,8 +9,7 @@ body {
     font-size: 13px;
     line-height: 1.35;
 }
-
-/* CV Container */
+/* CV page */
 .cv {
     display: grid;
     grid-template-columns: 40% 60%;
@@ -36,7 +32,6 @@ body {
     height: 130px;
     margin: 0 auto 18px;
 }
-
 .avatar img {
     width: 100%;
     height: 100%;
@@ -44,50 +39,47 @@ body {
     object-fit: cover;
 }
 
+
 /* Left Column Sections */
 .side-section {
     margin-bottom: 16px;
 }
-
 .sidebar h2,
 .main-section h2 {
     margin: 0 0 9px;
     font-size: 17px;
     font-weight: 800;
 }
-
 .side-section p {
     margin: 5px 0;
     font-size: 12px;
 }
 
-/* Contact Information */
+/* Contact*/
 .contact-list {
     display: grid;
     gap: 8px;
     padding: 0;
     list-style: none;
 }
-
 .contact-list li {
     display: flex;
     gap: 8px;
     font-size: 12px;
 }
 
+
 /* Skills */
 .skill-label {
     margin-bottom: 4px;
     font-size: 12px;
 }
-
 .skill-track {
     height: 6px;
     margin-bottom: 10px;
     background: #ffffff55;
     border-radius: 10px;
 }
-
 .skill-track span {
     display: block;
     height: 100%;
@@ -101,26 +93,24 @@ body {
     gap: 7px;
     font-size: 12px;
 }
-
 .reference span {
     display: flex;
     gap: 8px;
     align-items: center;
 }
-
 .reference i {
     width: 14px;
 }
 
-/* Right Column */
+
+
+/* Right */
 .main-content {
     padding: 24px 25px;
 }
-
 .profile-header {
     margin-bottom: 20px;
 }
-
 h1 {
     margin: 0;
     font-size: 32px;
@@ -132,22 +122,19 @@ h1 {
     font-size: 15px;
 }
 
-/* Main Content Sections */
+/* Sections */
 .main-section {
     margin-bottom: 17px;
 }
-
 .main-section h2 {
     padding-bottom: 5px;
     border-bottom: 2px solid black;
     font-size: 18px;
 }
-
 .main-section h3 {
     margin: 10px 0 5px;
     font-size: 14px;
 }
-
 .main-section p,
 .main-section li {
     margin-top: 4px;
