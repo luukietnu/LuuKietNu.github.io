@@ -1,0 +1,620 @@
+* {
+    margin: 0;                  
+    padding: 0;                 
+    box-sizing: border-box;}
+
+#content {
+    width: 100%;               
+    height: 100vh;              
+    background: linear-gradient( 
+        to bottom,              
+        #48cae4,                 
+        #0077b6,                
+        #023e8a                 
+    );
+    position: relative;        
+    overflow: hidden;}
+
+
+
+/* ===============================================1.shark================================================== */
+
+#shark {
+    position: absolute; 
+    top: 75%;           
+    animation: Shark 10s linear infinite;   }
+ 
+#shark img {
+    width: 400px;
+}
+
+
+@keyframes Shark {
+    /* sát mép trái */
+    0% {left: 0; top: 600px; transform: scaleX(1);}
+    10% {top: 585px}
+    20% {top: 550px;}
+    30% {top: 575px; }
+    40% {top: 600px; }
+    49% {left: calc(100% - 400px); top: 600px; transform: scaleX(1);}
+    /* sát mép phải quay đầu */
+    50% {left: calc(100% - 400px); top: 600px; transform: scaleX(-1); }
+    60% {top: 585px;}
+    70% {top: 550px}
+    80% {top: 575px;}
+    90% {top: 600px;}
+    99% {left: 0;  top: 600px;  transform: scaleX(-1);}
+    /* về lại sát mép trái*/
+    100% { left: 0;  top: 600px; transform: scaleX(1);}
+}
+
+
+/* =============================================== 2.turtle ================================================== */
+
+#turtle {
+    position: absolute; 
+    top: 85%;           
+    animation: Turtle 16s linear infinite;
+}
+#turtle img {   
+    width: 90px;  
+    height: auto;  
+}
+ 
+@keyframes Turtle {
+ 
+    0% {
+        left: calc(100% - 90px);
+        transform: scaleX(-1);
+    }
+ 
+    49% {
+        left: 0;
+        transform: scaleX(-1);
+    }
+ 
+    50% {
+        left: 0;
+        transform: scaleX(1);
+    }
+ 
+    99% {
+        left: calc(100% - 90px);
+        transform: scaleX(1);
+    }
+ 
+    100% {
+        left: calc(100% - 90px);
+        transform: scaleX(-1);
+    }
+}
+
+
+
+/* =============================================== 3.diver================================================== */
+ 
+.diver {
+    position: absolute; 
+    animation: Diver 4s ease-in-out infinite;
+}
+ 
+.diver img {
+    width: 150px;
+    height: auto;
+}
+ 
+#diver1 {
+    top: 150px;
+    left: 250px;
+    animation-duration: 25s;
+}
+
+#diver2 {
+    top: 250px;
+    left: 350px;
+    animation-duration: 28s;
+}
+
+#diver3{
+    top: 350px;
+    left: 600px;
+    animation-duration: 30s;
+}
+
+
+@keyframes Diver {
+    0% {
+        left: 0;
+        transform: translateY(0) scaleX(1);
+    }
+
+    8% {
+        transform: translateY(100px) /*đi xuống so với ban đầu*/ scaleX(1);
+    }
+
+    16% {
+        transform: translateY(-90px) /*đi lên so với ban đầu*/ scaleX(1);
+    }
+
+    24% {
+        transform: translateY(190px) scaleX(1);
+    }
+
+    32% {
+        transform: translateY(20px) scaleX(1);
+    }
+
+    40% {
+        transform: translateY(150px) scaleX(1);
+    }
+
+    49% {
+        left: calc(100% - 150px);
+        transform: translateY(0) scaleX(1);
+    }
+
+    50% {
+        left: calc(100% - 150px);
+        transform: translateY(0) scaleX(-1);
+    }
+
+    58% {
+        transform: translateY(180px) scaleX(-1);
+    }
+
+    66% {
+        transform: translateY(-90px) scaleX(-1);
+    }
+
+    74% {
+        transform: translateY(180px) scaleX(-1);
+    }
+
+    82% {
+        transform: translateY(-90px) scaleX(-1);
+    }
+
+    90% {
+        transform: translateY(180px) scaleX(-1);
+    }
+
+    99% {
+        left: 0;
+        transform: translateY(0) scaleX(-1);
+    }
+
+    100% {
+        left: 0;
+        transform: translateY(0) scaleX(1);
+    }
+}
+
+/* =============================================== 4 samll fish ================================================== */
+
+.small-fish {
+    width: 180px;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    animation: Fish1 15s linear infinite;
+}
+
+.small-fish img {
+    width: 100%;
+    height: auto;
+}
+
+
+#fish11 { 
+    width: 180px;
+    top: 20%;
+    animation-duration: 18s;
+}
+
+#fish12 {
+    width: 130px;
+    top: 40%;
+    animation-duration: 22s;
+}
+
+#fish13 {  
+    width: 90px;
+    top: 22%;
+    animation-duration: 26s;
+}
+#fish14 { 
+    width: 180px;
+    top: 80%;
+    animation-duration: 26s;
+}
+
+@keyframes Fish1 {
+
+    0% {
+        left: 0;
+        transform: scaleX(1);
+    }
+
+    49% {
+        left: calc(100% - 180px);
+        transform: scaleX(1);
+    }
+
+    50% {
+        left: calc(100% - 180px);
+        transform: scaleX(-1);
+    }
+
+    99% {
+        left: 0;
+        transform: scaleX(-1);
+    }
+
+    100% {
+        left: 0;
+        transform: scaleX(1);
+    }
+}
+
+
+/* =============================================== 5.gold fish ================================================== */
+
+.gold-fish {
+    position: absolute;
+    right: 0;                           /* Bắt đầu ở mép phải */
+    animation-name: Fish2;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.gold-fish img {
+    width: 100%;
+    height: auto;
+}
+
+#fish21 { /*max*/
+    width: 180px;
+    top: 42%;
+    animation-duration: 18s;
+}
+
+#fish22 {
+    width: 130px;
+    top: 55%;
+    animation-duration: 22s;
+}
+
+#fish23 { /*min*/
+    width: 90px;
+    top: 70%;
+    animation-duration: 26s;
+}
+
+@keyframes Fish2 {
+    0% {
+        right: 0;
+        transform: scaleX(-1);
+    }
+
+    49% {
+        right: calc(100% - 180px);
+        transform: scaleX(-1);
+    }
+
+    50% {
+        right: calc(100% - 180px);
+        transform: scaleX(1);
+    }
+
+    99% {
+        right: 0;
+        transform: scaleX(1);
+    }
+
+    100% {
+        right: 0;
+        transform: scaleX(-1);
+    }
+}
+
+
+
+
+/* =============================================== 6.bubbles================================================== */
+.bubbles {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bubbles span {
+    width: 15px;
+    height: 15px;
+
+    border: 2px solid rgba(255,255,255,0.7);
+    border-radius: 50%;
+    animation: Bubble 8s linear infinite;
+}
+
+.bubbles span:nth-child(2) {
+    width: 25px;
+    height: 25px;
+    animation-delay: 2s;
+}
+
+.bubbles span:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.bubbles span:nth-child(4) {
+    width: 20px;
+    height: 20px;
+    animation-delay: 1s;
+}
+
+.bubbles span:nth-child(5) {
+    animation-delay: 3s;
+}
+
+.bubbles span:nth-child(6) {
+    width: 30px;
+    height: 30px;
+    animation-delay: 5s;
+}
+
+.bubbles span:nth-child(7) {
+    animation-delay: 3s;
+}
+
+.bubbles span:nth-child(8) {
+    animation-delay: 6s;
+}
+
+@keyframes Bubble {
+
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+/* =============================================== 7.seaweed================================================== */
+.seaweed {
+    position: absolute; 
+    bottom: -1%;         
+}
+
+.seaweed img {
+    width: 100%;       
+    height: auto;          
+}
+/* cục 1 bên góc trái */
+#seaweed1 {
+    width: 200px;
+    left: -3%;
+}
+#seaweed2 {
+    width: 130px;
+    left: 0%;
+}
+#seaweed3 {
+    width: 60px;
+    left: 0%;
+}
+#seaweed4 {
+    width: 60px;
+    left: 2%;
+}
+/* cục 2 bên góc phải */
+#seaweed5 {
+    width: 300px;
+    left: calc(100% - 10%);
+}
+#seaweed6 {
+    width: 200px;
+    left: calc(100% - 10%);
+}
+
+/*giữa hồ */
+#seaweed7 {
+    width: 45px;
+    left: 25%;
+}
+
+#seaweed8 {
+    width: 100px;
+    left: 33%;
+}
+
+#seaweed9 {
+    width: 35px;
+    left: 42%;
+}
+
+#seaweed10 {
+    width: 55px;
+    left: 51%;
+}
+
+#seaweed11 {
+    width: 60px;
+    left: 60%;
+}
+
+#seaweed12 {
+    width: 35px;
+    left: 69%;
+}
+
+#seaweed13 {
+    width: 55px;
+    left: 78%;
+}
+
+#seaweed14 {
+    width: 40px;
+    left: 87%;
+}
+
+#seaweed15 {
+    width: 45px;
+    left: 94%;
+}
+/* =============================================== 8.starfish================================================== */
+
+
+.starfish {
+    position: absolute; 
+    bottom: 0;          
+}
+
+.starfish img {
+    width: 100%;         
+    height: auto;        
+    display: block;
+}
+
+#starfish1 {
+    width: 65px;
+    left: 15%;
+    bottom: 5px;
+}
+
+#starfish2 {
+    width: 45px;
+    left: 75%;
+    bottom: 5px;
+}
+
+#starfish3 {
+    width: 55px;
+    left: 25%;
+    top: 35%;
+    animation: Float 5s ease-in-out infinite;
+}
+
+
+#starfish4 {
+    width: 35px;
+    left: 55%;
+    top: 55%;
+    animation: Float 7s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+
+#starfish5 {
+    width: 75px;
+    left: 80%;
+    top: 30%;
+    animation: Float 6s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+@keyframes Float {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(-35px);
+    }
+
+    75% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+/* =============================================9.background============================== */
+
+.bg1 {
+    background: linear-gradient(
+        to bottom,
+        #48cae4,
+        #0077b6,
+        #03045e
+    ) !important;
+}
+
+.bg2 {
+    background: linear-gradient(
+        to bottom,
+        #90e0ef,
+        #0096c7,
+        #023e8a
+    ) !important;
+}
+
+.bg3 {
+    background: linear-gradient(
+        to bottom,
+        #4361ee,
+        #3a0ca3,
+        #10002b
+    ) !important;
+}
+
+.bg4 {
+    background: linear-gradient(
+        to bottom,
+        #caf0f8,
+        #0077b6,
+        #001233
+    ) !important;
+}
+/* Cảnh nền ảnh */
+.bg5 {
+    background: url("images/ocean.jpg") center / cover  !important;
+}
+
+/* ==============================10.ctrl buttons============================= */
+
+.controls {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.controls button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+
+    background: white;
+    color: #023e8a;
+
+    font-size: 14px;
+    font-weight: bold;
+    
+    cursor: pointer;  
+}
+
+.controls button:hover {
+    background: #00b4d8;
+    color: white;
+    transform: scale(1.5);
+}

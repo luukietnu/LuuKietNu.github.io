@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ cá vui nhộn</title>
+
+    <link rel="stylesheet" href="aquarium.css">
+</head>
+
+<body>
+    <div id="content">
+       
+        <!-- shark -->
+        <div id="shark">   
+            <img src="images/shark.png" alt="Cá mập">
+        </div>
+
+        <!-- turtle -->
+        <div id="turtle">
+            <img src="images/turtle.png" alt="Rùa">
+        </div>
+
+            <!-- diver -->
+        <div class="diver" id="diver1">
+            <img src="images/diver1.png" alt="Thợ lặn 1">
+        </div>
+
+        <div class="diver" id="diver2">
+            <img src="images/diver2.png" alt="Thợ lặn 2">
+        </div>
+
+        <div class="diver" id="diver3">
+            <img src="images/diver3.png" alt="Thợ lặn 3">
+        </div>
+
+
+        <!-- Đàn cá xanh -->
+        <div class="small-fish" id="fish11">
+            <img src="images/faintSchool.png" alt="Đàn cá xanh">
+        </div>
+        <div class="small-fish" id="fish12">
+            <img src="images/faintSchool.png" alt="Đàn cá xanh">
+        </div>
+        <div class="small-fish" id="fish13">
+            <img src="images/faintSchool.png" alt="Đàn cá xanh">
+        </div>
+        <div class="small-fish" id="fish14">
+            <img src="images/faintSchool.png" alt="Đàn cá xanh">
+        </div>
+
+
+
+
+        
+
+        <!--gold fish -->
+        <div class="gold-fish" id="fish21">
+            <img src="images/goldFishSchool.png" alt="Đàn cá vàng 1">
+        </div>
+
+        <div class="gold-fish" id="fish22">
+            <img src="images/goldFishSchool.png" alt="Đàn cá vàng 2">
+        </div>
+
+        <div class="gold-fish" id="fish23">
+            <img src="images/goldFishSchool.png" alt="Đàn cá vàng 3">
+        </div>
+
+        <!-- bubbles -->
+        <div class="bubbles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!--seaweed-->
+        <div class="seaweed" id="seaweed1">
+            <img src="images/seaweed.gif" alt="Rong biển 1">
+        </div>
+
+        <div class="seaweed" id="seaweed2">
+            <img src="images/seaweed.gif" alt="Rong biển 2">
+        </div>
+
+        <div class="seaweed" id="seaweed3">
+            <img src="images/seaweed.gif" alt="Rong biển 3">
+        </div>
+
+        <div class="seaweed" id="seaweed4">
+            <img src="images/seaweed.gif" alt="Rong biển 4">
+        </div>
+
+        <div class="seaweed" id="seaweed5">
+            <img src="images/seaweed.gif" alt="Rong biển 5">
+        </div>
+        <div class="seaweed" id="seaweed6">
+            <img src="images/seaweed.gif" alt="Rong biển 6">
+        </div>
+        <!-- small seaweed-->
+        <div class="seaweed" id="seaweed7">
+            <img src="images/seaweed.gif" alt="Rong biển 7">
+        </div>
+
+        <div class="seaweed" id="seaweed8">
+            <img src="images/seaweed.gif" alt="Rong biển 8">
+        </div>
+
+        <div class="seaweed" id="seaweed9">
+            <img src="images/seaweed.gif" alt="Rong biển 9">
+        </div>
+
+        <div class="seaweed" id="seaweed10">
+            <img src="images/seaweed.gif" alt="Rong biển 10">
+        </div>
+
+        <div class="seaweed" id="seaweed11">
+            <img src="images/seaweed.gif" alt="Rong biển 11">
+        </div>
+        <div class="seaweed" id="seaweed12">
+        <img src="images/seaweed.gif" alt="Rong biển 12">
+        </div>
+
+        <div class="seaweed" id="seaweed13">
+            <img src="images/seaweed.gif" alt="Rong biển 13">
+        </div>
+
+        <div class="seaweed" id="seaweed14">
+            <img src="images/seaweed.gif" alt="Rong biển 14">
+        </div>
+
+        <div class="seaweed" id="seaweed15">
+            <img src="images/seaweed.gif" alt="Rong biển 15">
+        </div>
+
+        <!--starfish -->
+        <div class="starfish" id="starfish1">
+            <img src="images/starfish.gif" alt="sao biển 1">
+        </div>
+        <div class="starfish" id="starfish2">
+            <img src="images/starfish.gif" alt="sao biển 2">
+        </div>
+        <!-- flying starfish-->
+        <div class="starfish" id="starfish3">
+            <img src="images/starfish.gif" alt="Sao biển 3">
+        </div>
+
+        <div class="starfish" id="starfish4">
+            <img src="images/starfish.gif" alt="Sao biển 4">
+        </div>
+
+        <div class="starfish" id="starfish5">
+            <img src="images/starfish.gif" alt="Sao biển 5">
+        </div>
+
+         <!-- ctrl button -->
+        <div class="controls">
+
+            <button onclick="changeBackground()">🌊 Đổi cảnh</button>
+
+            <button id="music" onclick="toggleMusic()"> 🔊 Bật nhạc</button>
+            <audio id="bgmusic" loop>
+                <source src="audio/music.mp3" type="audio/mpeg">
+            </audio>
+
+        </div>
+    </div>
+    <script src="aquarium.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.hh-box { width: 200px; height: 250px;
+       border: 1px solid yellow; border-radius: 5%;
+       box-shadow: 0 0 5px silver; /*độ bóng lệch trái phải, độ bóng lệch trên dưới, độ nhòe bóng*/
+       position: relative;
+       display: inline-block;
+       margin: 25px 5px 5px 5px;padding: 15px 0 0 0;}
+.hh-box:hover{ box-shadow: 0 0 5px red;}
+.hh-box-name{text-align: center; position: absolute; top: -25px; left:0px;right: 0px;}
+.hh-box-image{width: 200px}
+.hh-box-icon{width: 50px; position: absolute; top: 0px; right: 0px;}
+.hh-box-price{ position: absolute; bottom: 10px;left:5px; font-weight: bold; color: rgb(208, 208, 2);}
+.hh-box-action{position: absolute;bottom:0px; right:5px; display: flex; gap: 4px;}
+.hh-box-action img{width: 20px; height: 20px; object-fit: contain;}
